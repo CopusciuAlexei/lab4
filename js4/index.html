@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет личных финансов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Учет личных финансов</h1>
+    
+    <form id="transaction-form">
+        <input type="number" id="amount" placeholder="Сумма" required>
+        <select id="category">
+            <option value="Доход">Доход</option>
+            <option value="Расход">Расход</option>
+        </select>
+        <input type="text" id="description" placeholder="Описание" required>
+        <button type="submit">Добавить</button>
+    </form>
+    
+    <table id="transactions-table">
+        <thead>
+            <tr>
+                <th>Дата и Время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Сумма</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Итого: <span id="total">0</span></h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
